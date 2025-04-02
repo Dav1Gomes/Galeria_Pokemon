@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Pokémon</title>
+    <link rel="stylesheet" href="stilopokes.css">
+    <link rel="shortcut icon" type="image/png" href="img/pokeball-512.webp">
+</head>
+<body>
+    <button id="dark-mode-toggle">🌙</button>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Procure por nome ou número...">
+            <button id="search-btn">Procurar</button>
+        </div>
+        <div class="pokemon-info">
+            <h2 id="pokemon-name">Carregando...</h2>
+            <h3 id="pokemon-number">#000</h3>
+        </div>
+        <div class="pokemon-grid">
+            <img id="pokemon-image" src="" alt="Pokémon">
+        </div>
+        <div id="pokemon-types" class="pokemon-types">
+        </div>
+        <label class="shiny-toggle">
+            <input type="checkbox" id="shiny-toggle">
+            <span>✨ Modo Brilhante</span>
+        </label>
+        <div class="button-container">
+            <button id="prev-btn">Anterior</button>
+            <button id="next-btn">Próximo</button>
+        </div>
+        <div>
+            <button id="random-btn">🎲</button>
+        </div>
+    </div>
+    <script src="pokes.js"></script>
+</body>
+</html>
